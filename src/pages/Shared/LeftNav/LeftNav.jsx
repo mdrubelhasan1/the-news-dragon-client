@@ -7,7 +7,7 @@ const LeftNav = () => {
     console.log(categories);
 
     useEffect(() => {
-        fetch('http://localhost:5000/categories')
+        fetch('https://the-news-dragon-server-7xubq21wr-md-rubel-hasans-projects.vercel.app/categories')
             .then(res => res.json())
             .then(data => setCategories(data))
             .catch(error => console.error(error))
